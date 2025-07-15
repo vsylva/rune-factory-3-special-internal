@@ -2,16 +2,17 @@
 edition = "2024"
 name = "rune-factory-3-internal"
 publish = false
+rust-version = "1.88"
 
 [lib]
 crate-type = ["cdylib"]
 name = "hid"
 
 [dependencies]
-hudhook = {path = "vendor/hudhook", default-features = false, features = [
+hudhook = { path = "vendor/hudhook", default-features = false, features = [
   "dx11",
-]}
-libmem = {version = "5.0.4", default-features = false}
+] }
+libmem = { version = "5.0.4", default-features = false }
 
 [build-dependencies]
 forward-dll = "0.1.16"
